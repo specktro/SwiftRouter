@@ -8,7 +8,7 @@
 
 import Alamofire
 
-protocol Router {
+public protocol Router {
     var baseURL: String { get }
     var endPoint: String { get }
     var method: HTTPMethod { get }
@@ -17,7 +17,7 @@ protocol Router {
     var authField: String? { get }
 }
 
-protocol Routable: Router, URLRequestConvertible {}
+public protocol Routable: Router, URLRequestConvertible {}
 
 extension Routable {
     var parameters: Parameters? {
