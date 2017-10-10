@@ -19,7 +19,7 @@ public protocol Router {
 
 public protocol Routable: Router, URLRequestConvertible {}
 
-extension Routable {
+public extension Routable {
     var parameters: Parameters? {
         return nil
     }

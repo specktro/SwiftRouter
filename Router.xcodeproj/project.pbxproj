@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50436C581F8D7E8C00C433F0 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A8F4C01F8D335100D6FDC9 /* Router.framework */; };
+		50436C591F8D7E8C00C433F0 /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 50A8F4C01F8D335100D6FDC9 /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50A8F4C51F8D335100D6FDC9 /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A8F4C31F8D335100D6FDC9 /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50A8F4CC1F8D3F0D00D6FDC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A8F4CB1F8D3F0C00D6FDC9 /* Router.swift */; };
 		50A8F4EB1F8D468000D6FDC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A8F4EA1F8D468000D6FDC9 /* AppDelegate.swift */; };
@@ -17,6 +19,30 @@
 		68F7A8B862D65E43BE47C379 /* Pods_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E3DE69760FFC98FA0D81EE /* Pods_Router.framework */; };
 		BFD57A25F3140D86AF6F0CF5 /* Pods_RouterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435C1079B6D23FEB2FB52929 /* Pods_RouterExample.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50436C5A1F8D7E8C00C433F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50A8F4B71F8D335100D6FDC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50A8F4BF1F8D335100D6FDC9;
+			remoteInfo = Router;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50436C5C1F8D7E8C00C433F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				50436C591F8D7E8C00C433F0 /* Router.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		435C1079B6D23FEB2FB52929 /* Pods_RouterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50436C581F8D7E8C00C433F0 /* Router.framework in Frameworks */,
 				BFD57A25F3140D86AF6F0CF5 /* Pods_RouterExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,10 +192,12 @@
 				50A8F4E61F8D468000D6FDC9 /* Resources */,
 				081C0DF1D537C53BD83CBDC0 /* [CP] Embed Pods Frameworks */,
 				CC09FCDD5DF4F502690FA3EF /* [CP] Copy Pods Resources */,
+				50436C5C1F8D7E8C00C433F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50436C5B1F8D7E8C00C433F0 /* PBXTargetDependency */,
 			);
 			name = RouterExample;
 			productName = RouterExample;
@@ -342,6 +371,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		50436C5B1F8D7E8C00C433F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50A8F4BF1F8D335100D6FDC9 /* Router */;
+			targetProxy = 50436C5A1F8D7E8C00C433F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		50A8F4EE1F8D468000D6FDC9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -419,6 +456,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				ud_base_url = "http://urband-dev.api.ironbit.net/api/v1";
 			};
 			name = Debug;
 		};
@@ -472,6 +510,7 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				ud_base_url = "http://urband-dev.api.ironbit.net/api/v1";
 			};
 			name = Release;
 		};
@@ -490,6 +529,7 @@
 				INFOPLIST_FILE = Router/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dex.enterprise.demo.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -514,6 +554,7 @@
 				INFOPLIST_FILE = Router/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dex.enterprise.demo.Router;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -526,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C743CCCB480ECBDB494A0624 /* Pods-RouterExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4682Q6QAJV;
@@ -542,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9899D441508079FF095D1010 /* Pods-RouterExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4682Q6QAJV;
