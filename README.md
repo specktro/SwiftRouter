@@ -1,5 +1,5 @@
 # Router
-Basic service router for multiple API REST services
+This fantastic service router allows you to connect with different API REST from entire world, yes... FROM ENTIRE WORLD!
 
 ## License
 
