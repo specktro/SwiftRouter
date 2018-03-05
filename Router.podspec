@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   	This fantastic service router allows you to connect with different API REST from entire world, yes... FROM ENTIRE WORLD!.
   	DESC
  
-  	s.homepage = 'http://irongit.southcentralus.cloudapp.azure.com/dioses/lib-router'
+  	s.homepage = 'https://bitbucket.org/ioses/router'
   	s.license = { :type => 'MIT', :file => 'LICENSE.md' }
-  	s.author = { 'specktro' => 'specktro@nonull.mx' }
-  	s.source = { :git => 'http://irongit.southcentralus.cloudapp.azure.com/dioses/lib-router.git', :tag => "#{s.version}" }
+  	s.author = { 'specktro' => 'miguelangel.gomezrivero@gmail.com' }
+  	s.source = { :git => 'https://bitbucket.org/ioses/router.git', :tag => "#{s.version}" }
   	s.dependency 'Alamofire', '> 4.5'
  	
   	s.source_files = 'Router/Router.swift'
