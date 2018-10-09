@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2016 Centro de Investigación y Desarrollo Coatl S.A. de C.V.
+Copyright (c) 2018 @specktro de NoNullMX.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
